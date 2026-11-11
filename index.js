@@ -1,5 +1,5 @@
 // My first GitHub project
-
+const greet = require('./helper');
 const name = "Manigandan";
 
 function welcomeUser(username) {
@@ -7,3 +7,6 @@ function welcomeUser(username) {
 }
 
 console.log(welcomeUser(name));
+greet(name).then((result)=>{
+    console.log("result",result)
+})
